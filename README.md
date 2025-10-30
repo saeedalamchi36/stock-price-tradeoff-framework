@@ -34,5 +34,6 @@ pip install -r requirements.txt
 
 # ۴. اجرای محیط ژوپیتر (Jupyter Lab)
 jupyter lab
+```
 
 مرحله نهایی: پس از اجرای دستور آخر (jupyter lab)، یک صفحه در مرورگر شما باز می‌شود. در آن صفحه، وارد پوشه notebooks شوید و روی فایل demonstration.ipynb کلیک کنید تا نوت‌بوک باز شده و بتوانید سلول‌های آن را اجرا نمایید.
