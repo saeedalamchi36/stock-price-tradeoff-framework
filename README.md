@@ -48,3 +48,17 @@ The primary goal of this code is to clarify the core methodology of the paper, n
 
 ```bash
 git clone https://github.com/saeedalamchi36/stock-price-tradeoff-framework.git
+</div>
+<div dir="rtl">
+۲. **نصب وابستگی‌ها:**
+وارد پوشه پروژه شوید و تمام کتابخانه‌های لازم را با استفاده از فایل `requirements.txt` نصب کنید:
+</div>
+<div dir="ltr">
+cd stock-price-tradeoff-framework
+pip install -r requirements.txt
+</div>
+<div dir="rtl">
+۳. **اجرای نوت‌بوک:**
+نرم‌افزار VS Code را باز کرده، پوشه پروژه را در آن باز کنید و به سراغ فایل نوت‌بوک آموزشی بروید و سلول‌های آن را به ترتیب اجرا نمایید: `notebooks/demonstration.ipynb`
+</div>
+```
