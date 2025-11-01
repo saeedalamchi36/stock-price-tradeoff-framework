@@ -4,14 +4,20 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.svm import SVR
 
 # Note: For Deep Learning models, you would need TensorFlow/Keras.
-# We will define them conceptually here.
 # To install tensorflow: pip install tensorflow
+# For ARIMA, you would need statsmodels: pip install statsmodels
 
 def get_benchmark_models():
     """
     Defines the benchmark models with the hyperparameters specified in the paper.
     This is for transparency and is not meant to be a fully executable training script.
     """
+    
+    # --- Statistical Model (ARIMA) ---
+    # We define its configuration as a dictionary, similar to the DL models.
+    arima_params = {
+        'order': (5, 1, 0)  # (p, d, q) as specified in the paper's Table 2
+    }
     
     # --- Scikit-learn based models ---
     rf_model = RandomForestRegressor(
@@ -47,6 +53,7 @@ def get_benchmark_models():
 
     # We store everything in a dictionary for easy access
     models = {
+        'ARIMA_config': arima_params,
         'Random Forest': rf_model,
         'SVR': svr_model,
         'LSTM_config': lstm_params,
